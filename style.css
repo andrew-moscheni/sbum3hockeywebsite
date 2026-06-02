@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+}
+
+.nav-bar {
+    height: 15vh;
+    width: 100%;
+    background-color: #990000;
+    display: flex;
+}
+
+/* Nav Bar and Top Right Logo Specs */
+.navbar-trapezoid {
+    width: 15%;
+    height: 100%;
+    background-color: #002244;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+.navbar-logo {
+    position: absolute;
+    height: 75%;
+    width: auto;
+}
+
+.trapezoid-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition: transform 0.2s ease;
+}
+
+.trapezoid-content {
+    width: 100%;
+    height: 100%;
+    background-color: #002244;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nav Bar Item Specs */
+.navbar-item {
+    width: 15%;
+    height: 100%;
+    background-color: #990000;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+    position: relative;
+}
+
+.navbar-item-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+
+.navbar-item-content {
+    width: 100%;
+    height: 100%;
+    background-color: #990000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar-item-content:hover {
+    background-color: #002244;
+}
+
+.slideshow {
+    height: 60vh;
+    width: 100%;
+    background-color: lightslategray;
+}
+
+.rotated-text {
+    transform: rotate(45deg);
+}
+
+/* Slideshow content */
+.slide {display: none;}
+.slideshow-image {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.slideshow-button {
+  background-color: #990000;
+  color: white;
+  border:none;
+  font-size: 25px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10vh;
+  border-radius:10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .caption {font-size: 11px}
+}
+
+/* Media handles */
+.media-handles {
+    width: 100%;
+    margin: auto;
+    display:flex;
+}
+
+.media-icon {
+    width: 23%;
+    height: auto;
+    margin: 2%;
+    position: relative;
+}
+
+.media-text {
+    text-align:center;
+    font-size: 30px;
+}
