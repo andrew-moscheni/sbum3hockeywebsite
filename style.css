@@ -165,3 +165,30 @@ body{
     text-align:center;
     font-size: 30px;
 }
+
+.schedule {
+    margin: 0 auto;
+    width:100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+.schedule th {
+    background-color: #002244;
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.schedule td {
+    text-align:center;
+    border:none;
+    padding: 0;
+    margin: 5px;
+}
+
+.schedule-logo {
+    width: 64px;
+    height: auto;
+}
