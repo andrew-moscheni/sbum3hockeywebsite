@@ -200,12 +200,14 @@ body{
     width: 100%;
     height: 20%;
     display: flex;
+    justify-content:center;
 }
 
 .banner img {
     width: 150px;
     height: auto;
     position: relative;
+    margin: 10px;
 }
 
 .banner table {
@@ -214,4 +216,23 @@ body{
 
 .banner th {
     color: #002244;
+}
+
+.stats-standings-cont {
+    justify-content: center;
+    display: flex;
+}
+
+.standings-cont {
+    flex: 1;
+    position: relative;
+}
+
+.stats-cont {
+    flex: 1;
+    position: relative;
+}
+
+.standings {
+    border-spacing: 20px 0px;
 }
